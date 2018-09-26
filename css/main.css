@@ -100,27 +100,38 @@ textarea {
 /*
 Start utility classes
 */
-
+#main {
+    width: 100%;
+    background-color: red;
+    display: flex;
+}
 /*
 End utility classes
 */
-
 /*
 Start commons rules
 */
-
+.fas fa-search{
+    color: white;
+}
+#mainLeft, #mainRight {
+    width: 50%;
+}
 /*
 End commons rules
 */
-
 /*
 Start main rules
 */
-
+#mainLeft {
+    background-color: rgb(29, 161, 242);;
+}
+#mainRight {
+background-color: green;
+}
 /*
 End main rules
 */
-
 /*
 Start footer rules
 */
