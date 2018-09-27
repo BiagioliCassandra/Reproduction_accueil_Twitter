@@ -100,9 +100,10 @@ textarea {
 /*
 Start utility classes
 */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 #main {
-    width: 100%;
-    background-color: red;
     display: flex;
 }
 /*
@@ -111,11 +112,31 @@ End utility classes
 /*
 Start commons rules
 */
-.fas fa-search{
-    color: white;
+h1 {
+    font-size: 27px;
 }
 #mainLeft, #mainRight {
-    width: 50%;
+    height: 87.5vh;
+    min-width: 50%;
+    display: flex;
+}
+.linkMainRight, .log {
+    background-color: white;
+    border: 1px rgb(29, 161, 242) solid;
+    color: rgb(29, 161, 242);
+    border-radius: 10%;
+}
+#mainLeft, .log {
+    background-color: rgb(29, 161, 242);
+    color: white;
+}
+.div2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+a:link {
+    text-decoration: none;
 }
 /*
 End commons rules
@@ -123,11 +144,17 @@ End commons rules
 /*
 Start main rules
 */
-#mainLeft {
-    background-color: rgb(29, 161, 242);;
+.textMainLeft {
+    line-height: 50px;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 18px;
 }
-#mainRight {
-background-color: green;
+#logoAndConnection {
+    display: flex;
+    justify-content: space-between;
 }
 /*
 End main rules
@@ -135,6 +162,23 @@ End main rules
 /*
 Start footer rules
 */
+#listUl {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 3.2%;
+}
+li a {
+    color: #aab8c2;
+    font-size: 0.8em;
+    padding: 3px 7px;
+}
+#inscription {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 /*
 End footer rules
