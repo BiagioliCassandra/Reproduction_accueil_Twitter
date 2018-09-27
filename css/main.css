@@ -112,6 +112,9 @@ End utility classes
 /*
 Start commons rules
 */
+h1 {
+    font-size: 27px;
+}
 #mainLeft, #mainRight {
     height: 87.5vh;
     min-width: 50%;
@@ -121,8 +124,7 @@ Start commons rules
     background-color: white;
     border: 1px rgb(29, 161, 242) solid;
     color: rgb(29, 161, 242);
-    text-decoration: none;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 #mainLeft, .log {
     background-color: rgb(29, 161, 242);
@@ -133,6 +135,9 @@ Start commons rules
     flex-direction: column;
     margin: auto;
 }
+a:link {
+    text-decoration: none;
+}
 /*
 End commons rules
 */
@@ -141,14 +146,14 @@ Start main rules
 */
 .textMainLeft {
     line-height: 50px;
-    height: 10vh;
+    height: 12vh;
     display: flex;
     flex-direction: column;
-}
-#mainRight {
-    background-color: green;
+    font-weight: bold;
+    font-size: 18px;
 }
 #logoAndConnection {
+    display: flex;
     justify-content: space-between;
 }
 /*
@@ -162,13 +167,19 @@ Start footer rules
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color:  #aab8c2;
     padding-right: 3.2%;
 }
-li {
+li a {
+    color: #aab8c2;
     font-size: 0.8em;
     padding: 3px 7px;
 }
+#inscription {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 /*
 End footer rules
 */
