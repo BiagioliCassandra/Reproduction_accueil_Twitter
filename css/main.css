@@ -103,6 +103,9 @@ Start utility classes
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+h1 {
+    font-size: 27px;
+}
 #main {
     display: flex;
 }
@@ -112,19 +115,24 @@ End utility classes
 /*
 Start commons rules
 */
-h1 {
-    font-size: 27px;
-}
 #mainLeft, #mainRight {
     height: 87.5vh;
     min-width: 50%;
     display: flex;
 }
+/*Creates button login and registration*/
 .linkMainRight, .log {
     background-color: white;
     border: 1px rgb(29, 161, 242) solid;
     color: rgb(29, 161, 242);
-    border-radius: 10%;
+    text-align: center;
+    padding-top: 0.7em;
+    height: 5vh;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+
 }
 #mainLeft, .log {
     background-color: rgb(29, 161, 242);
@@ -152,7 +160,7 @@ Start main rules
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
+/*Sets up the block structure on the left*/
 .textMainLeft {
     line-height: 50px;
     height: 12vh;
@@ -160,6 +168,7 @@ Start main rules
     flex-direction: column;
     font-weight: bold;
 }
+/*space logo and button login*/
 #logoAndConnection {
     display: flex;
     justify-content: space-between;
@@ -167,7 +176,6 @@ Start main rules
 #inscription {
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 /*
 End main rules
@@ -175,6 +183,7 @@ End main rules
 /*
 Start footer rules
 */
+/*Supp the puce and allow links to go to the line*/
 #listUl {
     list-style: none;
     display: flex;
@@ -182,6 +191,7 @@ Start footer rules
     justify-content: center;
     padding-right: 3.2%;
 }
+/*Color the link in grey and get a padding between each link*/
 li a {
     color: #aab8c2;
     font-size: 0.8em;
